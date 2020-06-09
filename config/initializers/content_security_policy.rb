@@ -29,12 +29,14 @@ Rails.application.config.content_security_policy do |policy|
   script_src = [
     :self, :unsafe_inline, 'https://www.youtube.com/iframe_api', 'https://s.ytimg.com',
     'https://kit.fontawesome.com', 'https://kit-pro.fontawesome.com',
-    'https://kit-free.fontawesome.com'
+    'https://kit-free.fontawesome.com',
+    'http://cdn.jsdelivr.net/npm/graphql-playground-react/build/static/js/middleware.js'
   ]
 
   style_src = [
     :self, :unsafe_inline, 'https://fonts.googleapis.com', 'https://pro.fontawesome.com',
-    'https://kit-pro.fontawesome.com', 'https://kit-free.fontawesome.com'
+    'https://kit-pro.fontawesome.com', 'https://kit-free.fontawesome.com',
+    'https://cdn.jsdelivr.net/npm/graphql-playground-react/build/static/css/index.css'
   ]
 
   img_src = [
@@ -42,7 +44,7 @@ Rails.application.config.content_security_policy do |policy|
     Rails.application.secrets[:rsi_endpoint], 'https://img.youtube.com',
     'https://fleetyards.s3-eu-west-1.amazonaws.com',
     'https://fleetyards-stage.s3.eu-central-1.amazonaws.com',
-    'https://cdn.s3.fleetyards.net'
+    'https://cdn.s3.fleetyards.net', 'http://cdn.jsdelivr.net/npm/graphql-playground-react/build/favicon.png'
   ]
 
   font_src = [

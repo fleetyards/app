@@ -194,6 +194,10 @@ GEM
     geocoder (1.6.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphiql-rails (1.7.0)
+      railties
+      sprockets-rails
+    graphql (1.10.10)
     groupdate (5.0.0)
       activesupport (>= 5)
     haml (5.1.2)
@@ -576,6 +580,8 @@ DEPENDENCIES
   faker
   fog-aws
   foundation_emails
+  graphiql-rails
+  graphql
   groupdate
   haml
   haml-rails

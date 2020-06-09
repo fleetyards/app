@@ -34,6 +34,8 @@ gem 'inky-rb', require: 'inky'
 gem 'foundation_emails'
 gem 'premailer-rails'
 
+gem 'graphql'
+
 gem 'cancancan'
 gem 'devise'
 gem 'devise-async'
@@ -149,3 +151,5 @@ group :development, :test do
   gem 'mina', require: false
   gem 'mina-multistage', require: false
 end
+
+gem 'graphiql-rails', group: :development

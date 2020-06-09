@@ -4,6 +4,7 @@ namespace :api, path: (ENV['ON_SUBDOMAIN'] ? 'api' : ''), constraints: ->(req) {
   devise_for :users, only: []
 
   draw :api_v1_routes
+  draw :api_v2_routes
 
   root to: 'base#root'
 end
